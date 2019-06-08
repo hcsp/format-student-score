@@ -13,9 +13,9 @@ public class Main {
     public static String formatStudentScore(String student, int score) {}
 
     public static void main(String[] args) {
-        System.out.println(formatStudentScore(-1));
-        System.out.println(formatStudentScore(0));
-        System.out.println(formatStudentScore(60));
-        System.out.println(formatStudentScore(900));
+        System.out.println(formatStudentScore("张三", -1));
+        System.out.println(formatStudentScore("张三", 0));
+        System.out.println(formatStudentScore("张三", 60));
+        System.out.println(formatStudentScore("张三", 900));
     }
 }
