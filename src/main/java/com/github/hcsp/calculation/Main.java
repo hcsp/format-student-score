@@ -1,7 +1,6 @@
 package com.github.hcsp.calculation;
 
 public class Main {
-
     /**
      * 输入学生姓名和分数，当： 90<=score<=100分时，返回"学生X的分数是Y，评级是A"；
      *
