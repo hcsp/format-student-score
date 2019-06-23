@@ -17,11 +17,11 @@ public class Main {
     public static String formatStudentScore(String student, int score) {
         String res;
         if(score >= 90 &&  score <= 100) {
-            res = student + "的分数是" + score +"，评级是A";
+            res = "学生" + student + "的分数是" + score +"，评级是A";
         }else if(score >= 60 && score <= 89) {
-            res = student + "的分数是" + score +"，评级是B";
+            res = "学生" + student + "的分数是" + score +"，评级是B";
         }else if(score >= 0 && score <= 59) {
-            res = student + "的分数是" + score +"，评级是C";
+            res = "学生" + student + "的分数是" + score +"，评级是C";
         }else {
             res = "非法输入";
         }
