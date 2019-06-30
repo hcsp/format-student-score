@@ -1,7 +1,5 @@
 package com.github.hcsp.calculation;
 
-import java.util.stream.Stream;
-
 public class Main {
     /**
      * 输入学生姓名和分数，当： 90<=score<=100分时，返回"学生X的分数是Y，评级是A"；
@@ -17,7 +15,12 @@ public class Main {
      * @return 结果字符串
      */
     public static String formatStudentScore(String student, int score) {
-        return Stream.of(Level.values()).filter(level -> level.test(score)).findFirst().get().format(student, score);
+        for (Level level : Level.values()) {
+            if (level.test(score)) {
+                return level.format(student, score);
+            }
+        }
+        throw new IllegalStateException("Should not be here!");
     }
 
     enum Level {
