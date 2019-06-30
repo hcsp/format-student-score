@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 public class MainTest {
     @Test
     public void test() {
+        // 故意修改此文件使CI不通过
         Assertions.assertEquals("非法输入", Main.formatStudentScore("", -1));
         Assertions.assertEquals("非法输入", Main.formatStudentScore("", 101));
 
