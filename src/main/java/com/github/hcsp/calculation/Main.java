@@ -15,11 +15,11 @@ public class Main {
      * @return 结果字符串
      */
     public static String formatStudentScore(String student, int score) {
-        if(90 <= score && score <= 100){
+        if(score >= 90 && score <= 100){
             return "A";
-        }else if(60 <= score && score <= 89){
+        }else if(score >= 60 && score <= 89){
             return "B";
-        }else if(0 <= score && score <= 59){
+        }else if(score >= 0 && score <= 59){
             return "C";
         }
         return "非法输入";
