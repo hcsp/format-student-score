@@ -17,7 +17,7 @@ public class Main {
      * @return 结果字符串
      */
     public static String formatStudentScore(String student, int score) {
-        String level = null;
+        //String level = null;
         //if(score >= 90 && score <= 100){
         //    level = "A";
         //}else if(score >= 60 && score <= 89){
