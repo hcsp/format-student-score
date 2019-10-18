@@ -18,11 +18,11 @@ public class Main {
         if (score < 0 || score > 100) {
             return "非法输入";
         } else if (score < 60) {
-            return "学生X的分数是"+ score + "，评级是C";
+            return "学生"+ student +"的分数是" + score + "，评级是C";
         } else if (score < 90) {
-            return "学生X的分数是"+ score + "，评级是B";
+            return "学生"+ student +"的分数是" + score + "，评级是B";
         } else{
-            return "学生X的分数是"+ score + "，评级是A";
+            return "学生"+ student +"的分数是" + score + "，评级是A";
         }
     }
 
