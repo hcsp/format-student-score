@@ -15,19 +15,22 @@ public class Main {
      * @return 结果字符串
      */
     public static String formatStudentScore(String student, int score) {
-        if(student == null){
+
+        String level = "";
+        if(score>=90 && score<=100){
+            level = "A";
+        }else if(score>=60 && score<=89){
+            level = "B";
+        }else if(score>=0 && score<=59){
+            level = "C";
+        }
+
+        if(student == null || level.equals("")){
             return "非法输入";
         }
 
-        if(score>=90 && score<=100){
-            return "学生"+ student +"的分数是"+ score +"，评级是A";
-        }else if(score>=60 && score<=89){
-            return "学生"+ student +"的分数是"+ score +"，评级是B";
-        }else if(score>=0 && score<=59){
-            return "学生"+ student +"的分数是"+ score +"，评级是C";
-        }
+        return "学生" + student + "的分数是" + score + "，评级是" + level;
 
-        return "非法输入";
     }
 
     public static void main(String[] args) {
