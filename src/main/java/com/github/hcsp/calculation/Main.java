@@ -14,19 +14,7 @@ public class Main {
      * @param score 学生的分数
      * @return 结果字符串
      */
-    public static String formatStudentScore(String student, int score) {
-        StringBuffer resutl = new StringBuffer();
-        if (score >= 90 && score <= 100) {
-            resutl.append("学生").append(student).append("的分数是").append(score).append("，评级是A");
-        } else if (score >= 60 && score <= 89) {
-            resutl.append("学生").append(student).append("的分数是").append(score).append("，评级是B");
-        } else if (score >= 0 && score <= 59) {
-            resutl.append("学生").append(student).append("的分数是").append(score).append("，评级是C");;
-        } else {
-            resutl.append("非法输入");
-        }
-        return resutl.toString();
-    }
+    public static String formatStudentScore(String student, int score) {}
 
     public static void main(String[] args) {
         System.out.println(formatStudentScore("张三", -1));
