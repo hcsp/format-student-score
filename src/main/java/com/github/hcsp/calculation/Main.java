@@ -1,5 +1,4 @@
 package com.github.hcsp.calculation;
-import java.text.MessageFormat;
 
 public class Main {
     /**
@@ -15,17 +14,7 @@ public class Main {
      * @param score 学生的分数
      * @return 结果字符串
      */
-    public static String formatStudentScore(String student, int score) {
-        if(score >= 90 && score <= 100) {
-            return MessageFormat.format("学生{0}的分数是{1}，评级是A", student, score);
-        } else if(score >= 60 && score <= 89) {
-            return MessageFormat.format("学生{0}的分数是{1}，评级是B", student, score);
-        } else if(score >= 0 && score <= 59) {
-            return MessageFormat.format("学生{0}的分数是{1}，评级是C", student, score);
-        } else {
-            return "非法输入";
-        }
-    }
+    public static String formatStudentScore(String student, int score) {}
 
     public static void main(String[] args) {
         System.out.println(formatStudentScore("张三", -1));
