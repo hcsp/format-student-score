@@ -25,7 +25,6 @@ public class Main {
 //            System.out.println("学生"+student+"的分数是"+score+"评级是C");
             return "学生"+student+"的分数是"+score+"评级是C";
         }else {
-//            System.out.println("非法输入");
             return "非法输入";
         }
 
