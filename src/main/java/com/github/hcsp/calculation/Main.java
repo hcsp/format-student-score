@@ -21,8 +21,12 @@ public class Main {
                 return "学生" + student + "的分数是" + score + "，评级是C";
             } else if (score <= 89) {
                 return "学生" + student + "的分数是" + score + "，评级是B";
-            } else return "学生" + student + "的分数是" + score + "，评级是A";
-        } else return "非法输入";
+            } else {
+                return "学生" + student + "的分数是" + score + "，评级是A";
+            }
+        } else {
+            return "非法输入";
+        }
 
     }
 
