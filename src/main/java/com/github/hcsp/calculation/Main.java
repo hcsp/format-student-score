@@ -1,5 +1,7 @@
 package com.github.hcsp.calculation;
 
+import com.sun.org.apache.xpath.internal.objects.XString;
+
 public class Main {
     /**
      * 输入学生姓名和分数，当： 90<=score<=100分时，返回"学生X的分数是Y，评级是A"；
@@ -14,7 +16,21 @@ public class Main {
      * @param score 学生的分数
      * @return 结果字符串
      */
-    public static String formatStudentScore(String student, int score) {}
+    public static String formatStudentScore(String student, int score) {
+        if (score > 100 || score < 0) {
+            return "非法输入";
+        }
+
+        String level;
+        if (score >= 90) {
+            level = "A";
+        } else if (score >=60) {
+            level = "B";
+        } else {
+            level = "C";
+        }
+        return "学生" + student + "的分数是" + score + "，评级是" + level;
+    }
 
     public static void main(String[] args) {
         System.out.println(formatStudentScore("张三", -1));
