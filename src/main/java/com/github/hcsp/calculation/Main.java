@@ -26,12 +26,13 @@ public class Main {
              return "非法输入";
          }
 */
-        char xy=' ';
+
+
         if (!(score >= 0 && score <= 100)) {
             return "非法输入";
         }
 
-
+        char xy=' ';
         if (score >= 90) {
             xy = 'A';
         } else if (score >= 60) {
