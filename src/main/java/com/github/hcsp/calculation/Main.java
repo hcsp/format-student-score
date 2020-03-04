@@ -27,20 +27,20 @@ public class Main {
          }
 */
 
-
+        char xy = ' ';
         if (!(score >= 0 && score <= 100)) {
             return "非法输入";
-        }
+        }else {
 
-        char xy=' ';
-        if (score >= 90) {
-            xy = 'A';
-        } else if (score >= 60) {
-            xy = 'B';
-        } else  {
-            xy = 'c';
-        }
 
+            if (score >= 90) {
+                xy = 'A';
+            } else if (score >= 60) {
+                xy = 'B';
+            } else {
+                xy = 'c';
+            }
+        }
         return "学生" + student + "的分数是" + score + "评级是" + xy;
     }
 
