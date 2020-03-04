@@ -31,6 +31,7 @@ public class Main {
             return "非法输入";
         }
 
+
         if (score >= 90) {
             xy = 'A';
         } else if (score >= 60) {
