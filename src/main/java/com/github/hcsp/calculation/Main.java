@@ -36,7 +36,7 @@ public class Main {
             xy = 'A';
         } else if (score >= 60) {
             xy = 'B';
-        } else if (score <= 59) {
+        } else  {
             xy = 'c';
         }
 
