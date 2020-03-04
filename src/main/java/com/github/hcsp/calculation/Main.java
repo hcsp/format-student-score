@@ -27,7 +27,7 @@ public class Main {
          }
 */
         char xy=' ';
-        if (score < 0 || score > 100) {
+        if (!(score >= 0 && score <= 100)) {
             return "非法输入";
         }
 
