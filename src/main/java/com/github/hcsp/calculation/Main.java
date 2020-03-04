@@ -27,7 +27,7 @@ public class Main {
          }
 */
 
-
+/*
         if (!(score >= 0 && score <= 100)) {
             return "非法输入";
         }
@@ -41,7 +41,20 @@ public class Main {
             xy = 'c';
         }
 
-        return "学生" + student + "的分数是" + score + "评级是" + xy;
+        return "学生" + student + "的分数是" + score + "评级是" + xy;*/
+
+        if (!(score >= 0 && score <= 100)) {
+            return "非法输入";
+        }
+        char level;
+        if (score >= 90) {
+            level = 'A';
+        } else if (score >= 60) {
+            level = 'B';
+        } else {
+            level = 'C';
+        }
+        return "学生" + student + "的分数是" + score + ",评级是" + level;
     }
 
     public static void main(String[] args) {
