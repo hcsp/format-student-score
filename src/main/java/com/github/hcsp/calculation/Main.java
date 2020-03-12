@@ -27,7 +27,7 @@ public class Main {
         }
 
         if (grade.length() > 0) {
-            return "学生" + student + "的分数是" + score + ", 评级是" + grade;
+            return "学生" + student + "的分数是" + score + " 评级是" + grade;
         } else {
             return "非法输入";
         }
