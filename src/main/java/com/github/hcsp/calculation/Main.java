@@ -20,7 +20,7 @@ public class Main {
         } else if (60 <= score && score <= 89) {
             return "学生" + student + "的分数是" + score + "评级是B";
         } else if (0 <= score && score <= 59) {
-            return "学生" + student + "的分数是" + score + "评级是c";
+            return "学生" + student + "的分数是" + score + "评级是C";
         } else {
             return "非法输入";
         }
