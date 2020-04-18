@@ -27,7 +27,7 @@ public class Main {
         }
         if (level != null) {
             return "学生" + student + "的分数是" + score + ",评级是" + level;
-        }
+        }else
         return "非法输入";
 
     }
