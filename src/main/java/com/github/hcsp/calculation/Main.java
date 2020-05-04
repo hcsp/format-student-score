@@ -21,7 +21,9 @@ public class Main {
             return "学生"+student+"的分数是"+score+"评级是B";
         }else if (score<=59){
             return "学生"+student+"的分数是"+score+"评级是C";
-        }else return "非法输入";
+        }else{
+            return "非法输入";
+        }
 
     }
 
