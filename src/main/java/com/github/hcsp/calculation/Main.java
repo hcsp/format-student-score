@@ -14,7 +14,22 @@ public class Main {
      * @param score 学生的分数
      * @return 结果字符串
      */
-    public static String formatStudentScore(String student, int score) {}
+    public static String formatStudentScore(String student, int score) {
+        String level;
+        if (score < 0 || score > 100) {
+            return "非法输入";
+        }
+        if (score >= 90) {
+            level = "评级是A";
+        } else if (score >= 60) {
+            level = "评级是B";
+        } else {
+             level = "评级是C";
+        }
+        return level = "学生" + student + "的分数是" + score + level;
+    }
+
+
 
     public static void main(String[] args) {
         System.out.println(formatStudentScore("张三", -1));
