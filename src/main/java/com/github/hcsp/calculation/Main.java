@@ -26,7 +26,7 @@ public class Main {
         } else {
              level = "评级是C";
         }
-        return level = "学生" + student + "的分数是" + score + level;
+        return  "学生" + student + "的分数是" + score + level;
     }
 
 
