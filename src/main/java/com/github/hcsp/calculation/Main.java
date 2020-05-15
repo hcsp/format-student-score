@@ -16,17 +16,17 @@ public class Main {
      */
     public static String formatStudentScore(String student, int score) {
         String level;
-        if (score < 0 || score > 100) {
+        if (score >100 || score < 0) {
             return "非法输入";
         }
         if (score >= 90) {
-            level = "评级是A";
+            level = "A";
         } else if (score >= 60) {
-            level = "评级是B";
+            level = "B";
         } else {
-             level = "评级是C";
+             level = "C";
         }
-        return "学生" + student + "的分数是" + score + level;
+        return "学生" + student + "的分数是" + score + ",评级是"+level;
     }
 
 
