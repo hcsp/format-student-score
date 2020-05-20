@@ -16,11 +16,11 @@ public class Main {
      */
     public static String formatStudentScore(String student, int score) {
         StringBuilder grade = new StringBuilder();
-        if (score >= 90 &&  score <= 100) {
+        if (score >= 90 && score <= 100) {
             grade.append("A");
-        } else if (score >= 60 &&  score <= 89) {
+        } else if (score >= 60 && score <= 89) {
             grade.append("B");
-        } else if (score >= 0 &&  score <= 59) {
+        } else if (score >= 0 && score <= 59) {
             grade.append("C");
         } else {
             return "非法输入";
