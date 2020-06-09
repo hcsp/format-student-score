@@ -16,13 +16,13 @@ public class Main {
      */
     public static String formatStudentScore(String student, int score) {
         if (score >= 90 && score <= 100) {
-            return "学生X的分数是" + score + "，评级是A";
+            return student + "的分数是" + score + "，评级是A";
         }
         if (score >= 60 && score <= 89) {
-            return "学生X的分数是" + score + "，评级是B";
+            return student + "的分数是" + score + "，评级是B";
         }
         if (score >= 0 && score <= 59) {
-            return "学生X的分数是" + score + "，评级是C";
+            return student + "的分数是" + score + "，评级是C";
         } else {
             return "非法输入";
         }
