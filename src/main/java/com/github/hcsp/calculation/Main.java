@@ -32,5 +32,6 @@ public class Main {
         System.out.println(formatStudentScore("张三", 0));
         System.out.println(formatStudentScore("张三", 60));
         System.out.println(formatStudentScore("张三", 900));
+
     }
 }
