@@ -19,9 +19,9 @@ public class Main {
         if (90 <= score && score <= 100) {
             str = "学生" + student + "的分数是" + score + "，评级是A";
         } else if (60 <= score && score <= 89) {
-            str = "学生" + student + "的分数是" + score + "，评级是b";
+            str = "学生" + student + "的分数是" + score + "，评级是B";
         } else if (0 <= score && score <= 59) {
-            str = "学生" + student + "的分数是" + score + "，评级是c";
+            str = "学生" + student + "的分数是" + score + "，评级是C";
         } else {
             str = "非法输入";
         }
