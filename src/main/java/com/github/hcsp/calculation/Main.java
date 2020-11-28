@@ -15,15 +15,17 @@ public class Main {
      * @return 结果字符串
      */
     public static String formatStudentScore(String student, int score) {
+        String str;
         if (90 <= score && score <= 100) {
-            return "学生" + student + "的分数是" + score + "，评级是A";
+            str = "学生" + student + "的分数是" + score + "，评级是A";
         } else if (60 <= score && score <= 89) {
-            return "学生" + student + "的分数是" + score + "，评级是b";
+            str = "学生" + student + "的分数是" + score + "，评级是b";
         } else if (0 <= score && score <= 59) {
-            return "学生" + student + "的分数是" + score + "，评级是c";
+            str = "学生" + student + "的分数是" + score + "，评级是c";
         } else {
-            return "非法输入";
+            str = "非法输入";
         }
+        return str;
     }
 
     public static void main(String[] args) {
