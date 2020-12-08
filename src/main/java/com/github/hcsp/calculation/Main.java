@@ -19,9 +19,9 @@ public class Main {
             return student + "的分数是" + score + "，评级是A";
         } else if (score >= 60 && score <= 89) {
             return student + "的分数是" + score + "，评级是B";
-        }else if (score>=0&&score<=59){
+        } else if (score >= 0 && score <= 59) {
             return student + "的分数是" + score + "，评级是C";
-        }else{
+        } else {
             return "非法输入";
         }
     }
