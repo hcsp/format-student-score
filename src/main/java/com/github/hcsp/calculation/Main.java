@@ -15,8 +15,7 @@ public class Main {
      * @return 结果字符串
      */
     public static String formatStudentScore(String student, int score) {
-        String msg;
-        String level;
+        String msg, level;
         if (score > 100 || score < 0) {
             msg = "非法输入";
             return msg;
