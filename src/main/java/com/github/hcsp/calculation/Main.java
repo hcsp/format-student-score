@@ -25,7 +25,7 @@ public class Main {
     } else {
       return "非法输入";
     }
-    return "学生" + student + "的分数是" + score + "评级是" + level;
+    return "学生" + student + "的分数是" + score + ",评级是" + level;
   }
 
   public static void main(String[] args) {
