@@ -21,7 +21,7 @@ public class Main {
     } else if (score >= 60 && score <= 89) {
       level = "B";
     } else if (score >= 90 && score <= 100) {
-      level = "B";
+      level = "A";
     } else {
       return "非法输入";
     }
