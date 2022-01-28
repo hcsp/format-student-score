@@ -11,21 +11,10 @@ public class Main {
      * <p>score为其他值时，返回"非法输入"。
      *
      * @param student 学生的姓名
-     * @param score   学生的分数
+     * @param score 学生的分数
      * @return 结果字符串
      */
-    public static String formatStudentScore(String student, int score) {
-        String a = "学生" + student + "的分数是" + score + "，评级是A";
-        String b = "学生" + student + "的分数是" + score + "，评级是B";
-        String c = "学生" + student + "的分数是" + score + "，评级是C";
-        String d = "非法输入";
-
-        return ((score>=90)&&(score<=100)) ? a :( ((score>=60)&&(score<=89))? b : (((score>=0)&&(score<=59)) ? c:d));
-    }
-
-
-
-
+    public static String formatStudentScore(String student, int score) {}
 
     public static void main(String[] args) {
         System.out.println(formatStudentScore("张三", -1));
