@@ -18,11 +18,11 @@ public class Main {
         String Student_score;
         String Score_string;
         if(score>= 60 && score <= 89){
-            Score_string = String.format("学生X的分数是%d，评级是%s",score,"B");
+            Score_string = String.format("学生%s的分数是%d，评级是%s",student,score,"B");
         }else if (score >= 0 && score <=59){
-            Score_string = String.format("学生X的分数是%d，评级是%s",score,"C");
+            Score_string = String.format("学生%s的分数是%d，评级是%s",student,score,"C");
         }else if (score >= 90 && score <= 100){
-            Score_string = String.format("学生X的分数是%d，评级是%s",score,"A");
+            Score_string = String.format("学生%s的分数是%d，评级是%s",student,score,"A");
         }else{
             Score_string = "非法输入";
         }
